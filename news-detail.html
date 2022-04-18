@@ -104,10 +104,54 @@ https://templatemo.com/tm-567-nomad-force
                         <div class="col-lg-8 col-10 mx-auto">
                             <h2 class="mb-3" data-aos="fade-up">What happened to new viral video?</h2>
 
-                            <p class="me-4" data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan.</p>
+                            <p class="me-4" data-aos="fade-up"></p>
 
-                            <p data-aos="fade-up">Nullam id lorem commodo, pharetra sapien ut, accumsan ligula. Sed sit amet sem pulvinar, imperdiet eros quis, vestibulum felis. Pellentesque posuere scelerisque sodales.</p>
-
+                           <form action="reservation.php" method="post">
+  <div class="elem-group">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+  </div>
+  <div class="elem-group">
+    <label for="email">Your E-mail</label>
+    <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+  </div>
+  <div class="elem-group">
+    <label for="phone">Your Phone</label>
+    <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+  </div>
+  <hr>
+  <div class="elem-group inlined">
+    <label for="adult">Adults</label>
+    <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="child">Children</label>
+    <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="checkin-date">Check-in Date</label>
+    <input type="date" id="checkin-date" name="checkin" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="checkout-date">Check-out Date</label>
+    <input type="date" id="checkout-date" name="checkout" required>
+  </div>
+  <div class="elem-group">
+    <label for="room-selection">Select Room Preference</label>
+    <select id="room-selection" name="room_preference" required>
+        <option value="">Choose a Room from the List</option>
+        <option value="connecting">Connecting</option>
+        <option value="adjoining">Adjoining</option>
+        <option value="adjacent">Adjacent</option>
+    </select>
+  </div>
+  <hr>
+  <div class="elem-group">
+    <label for="message">Anything Else?</label>
+    <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+  </div>
+  <button type="submit">Book The Rooms</button>
+</form>
                             <div class="clearfix my-4 mt-lg-0 mt-5">
                                 <div class="col-md-6 float-md-end mb-3 ms-md-3" data-aos="fade-up">
                                     <figure class="figure">
@@ -116,18 +160,7 @@ https://templatemo.com/tm-567-nomad-force
                                         <figcaption class="figure-caption text-end">A caption for the above image.</figcaption>
                                     </figure>
                                 </div>
-
-                                  <p data-aos="fade-up">
-                                    Morbi scelerisque urna in orci elementum, nec mollis ligula luctus. Proin ullamcorper pulvinar commodo. Quisque tortor nunc, ultricies efficitur ex sit amet, tempus rutrum libero. In nec faucibus tellus. 
-                                  </p>
-
-                                  <p data-aos="fade-up">
-                                    Donec justo orci, pretium ultricies ante eget, bibendum semper enim. Nunc efficitur purus suscipit leo placerat, a ultricies purus gravida. Sed sollicitudin ornare porta. Mauris convallis sit amet purus sed rutrum.
-                                  </p>
-
-                                  <p data-aos="fade-up">
-                                    This Bootstrap 5 layout is provided by TemplateMo website and it is free to use for any of your website. You are allowed to edit it in any way you like. However, please do not redistribute this template ZIP file for a template download purpose on any other website such as Free CSS collection websites.
-                                  </p>
+ 
                             </div>
 
                             <div class="social-share d-flex mt-5">
@@ -150,10 +183,7 @@ https://templatemo.com/tm-567-nomad-force
                     <div class="row">
 
                         <div class="col-lg-8 col-10 mx-auto text-center">
-                            <span class="d-block" data-aos="zoom-in">Next article</span>
-
-                            <h3 class="news-title" data-aos="fade-up">
-                                <a href="news-detail.html" class="news-title-link">Job Opportunities - Digital Marketing</a>
+                        
                             </h3>
                         </div>
 
