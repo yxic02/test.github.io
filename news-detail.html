@@ -106,101 +106,60 @@ https://templatemo.com/tm-567-nomad-force
 
                             <p class="me-4" data-aos="fade-up"></p>
 
-                           <form action="reservation.php" method="post">
-  <div class="elem-group">
-      
-    <label for="name">Your Name</label>
-    <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
-      
-  </div>
- <div>
-</div>                                  
+                           <form action="#" method="post" class="contact-form" role="form" data-aos="fade-up">
                                
-  <div class="elem-group">
-      
-    <label for="email">Your E-mail</label>
-    <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
-      
-  </div>
-</div>
- <div>
-                               
-  <div class="elem-group">
-      
-    <label for="phone">Your Phone</label>
-    <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
-      
-  </div>
-  <div>
- </div>                              
-     <div class="elem-group inlined">
-      
-    <label for="adult">Adults</label>
-    <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
-      
-  </div>
-  <div>
-</div>                             
-  <div class="elem-group inlined">
-      
-    <label for="child">Children</label>
-    <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
-      
-  </div>
-  <div>
-</div>                             
-  <div class="elem-group inlined">
-      
-    <label for="checkin-date">Check-in Date</label>
-    <input type="date" id="checkin-date" name="checkin" required>
-      
-  </div>
-   <div>
-</div>                            
-  <div class="elem-group inlined">
-      
-    <label for="checkout-date">Check-out Date</label>
-    <input type="date" id="checkout-date" name="checkout" required>
-      
-  </div>
-   <div>
-</div>                            
-  <div class="elem-group">
-      
-    <label for="room-selection">Select Room Preference</label>
-    <select id="room-selection" name="room_preference" required>
-        <option value="">Choose a Room from the List</option>
-        <option value="connecting">Connecting</option>
-        <option value="adjoining">Adjoining</option>
-        <option value="adjacent">Adjacent</option>
-    </select>
-      
-  </div>
-<div>
-</div>
-  <div class="elem-group">
-      
-    <label for="message">Anything Else?</label>
-    <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
-      
-  </div>
-  <div>
-</div>                             
-  <button type="submit">Book The Rooms</button>
-</form>
-                            <div class="clearfix my-4 mt-lg-0 mt-5">
-                                <div class="col-md-6 float-md-end mb-3 ms-md-3" data-aos="fade-up">
-                                    <figure class="figure">
-                                        <img src="images/news/jean-philippe-delberghe-MmanXAs1sKw-unsplash.jpeg" class="img-fluid news-image" alt="">
-
-                                        <figcaption class="figure-caption text-end">A caption for the above image.</figcaption>
-                                    </figure>
-                                </div>
+                               <div class="row">
+                                   
+                                   <div class="col-lg-6 col-6">
+                                       <label for="name" class="form-label">Name <sup class="text-danger">*</sup></label>
+                                       
+                                       <input type="text" name="name" id="name" class="form-control" placeholder="Full name" required>
+                                   </div>
+                                   
+                                   <div class="col-lg-6 col-6">
+                                       <label for="email" class="form-label">email <sup class="text-danger">*</sup></label>
+                                       
+                                       <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required>
+                                   </div>
+                                   
+                                   <div class="col-lg-6 col-6">
+                                       <label for="Adult" class="form-label">adult <sup class="text-danger">*</sup></label>
+                                       
+                                       <input type="adult" name="adult" id="adult" class="form-control" placeholder="1" required>
+                                    </div>
+                                        
+                                   <div class="col-lg-6 col-6">
+                                       <label for="Children" class="form-label">children <sup class="text-danger">*</sup></label>
+                                       
+                                       <input type="children" name="chilfren" id="adult" class="form-control" placeholder="1" required>
+                                    </div>
+                                        
+                                   <div class="col-lg-6 col-6">  
+                                       <label for="Date" class="form-label">date <sup class="text-danger">*</sup></label>
+                                       
+                                       <input type="date" name="date" id="date" pattern="date/month/year*" class="form-control" placeholder="date" required>
+                                    </div>
+                                        
+                                   <div class="col-lg-6 col-6"> 
+                                       <label for="Time" class="form-label">time <sup class="text-danger">*</sup></label>
+                                       
+                                       <input type="time" name="time" id="time" pattern="hour:minutes*" class="form-control" placeholder="time" required>
+                                    </div>
+                                        
+                                   <div class="col-12 my-4">
+                                       <label for="message" class="form-label">Anything else?</label>
+                                       
+                                       <textarea name="message" rows="6" class="form-control" id="message" placeholder="Tell us about the request" required></textarea>   
+                                    </div>
+                                  </div>
+                               </div>
+                            
+                               <div class="col-lg-5 col-12 mx-auto mt-5">
+                                   <button type="submit" class="form-control">Send Message</button>
+                               </div>
+                            </form>
+                         </div>
  
-                            </div>
-
-                            <div class="social-share d-flex mt-5">
-                                <span class="me-4" data-aos="zoom-in">Share this article:</span>
 
                                 <a href="#" class="social-share-icon bi-facebook" data-aos="zoom-in"></a>
 
